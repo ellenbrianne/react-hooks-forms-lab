@@ -29,7 +29,7 @@ function ShoppingList({ items, setItems }) {
   })
 
   const selectDisplay = selectItems.map((item) => (
-    <Item key={item.id} name={item.name} category={selectedCategory} />
+    <Item key={item.id} name={item.name} category={item.category} />
   ))
 
   return (
@@ -39,6 +39,7 @@ function ShoppingList({ items, setItems }) {
         onCategoryChange={handleCategoryChange} 
         onSearchChange={handleSearchChange}
         search={search} 
+        selectedCategory={selectedCategory}
       />
       <ul className="Items">
         {selectDisplay}
