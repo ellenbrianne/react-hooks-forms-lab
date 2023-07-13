@@ -5,7 +5,7 @@ function ItemForm({ onItemFormSubmit }) {
   const initialData = {
     id: "",
     name: "",
-    category: "",
+    category: "Produce",
   }
   const [itemData, setItemData] = useState(initialData);
 
